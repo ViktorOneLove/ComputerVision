@@ -35,7 +35,7 @@ def parse_input_txt(path):
 def print_results_params_to_cli(result_params_arr):
     print(len(result_params_arr))
     for res_params in result_params_arr:
-        print(','.join(str(it) for it in res_params))
+        print(', '.join(str(it) for it in res_params))
 
 
 def main():

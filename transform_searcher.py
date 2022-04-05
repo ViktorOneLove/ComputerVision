@@ -64,6 +64,6 @@ class TransformSearcher:
 
             angle = 360 - angle
             dx, dy = self._compute_shifts_w_rotation(base_shape, scale, angle)
-            return np.array([count, scale, angle, dx, dy]).astype(int)
+            return np.array([count, dx, dy, scale, angle]).astype(int)
 
         return None
