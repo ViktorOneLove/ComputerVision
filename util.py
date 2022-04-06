@@ -55,7 +55,7 @@ def distance_line_to_point(line, point):
 
 def handle_noise_if_needed(img):
     noisy_pixels_count = np.count_nonzero(np.logical_and(img > 1, img < 255))
-    if noisy_pixels_count < 25:
+    if noisy_pixels_count < 70:
         return img
 
     kernel = np.ones((3, 3))
