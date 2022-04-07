@@ -44,8 +44,6 @@ def main():
     base_shapes = parse_input_txt(args.shape)
     img_src = cv2.imread(args.image, cv2.IMREAD_GRAYSCALE)
 
-    img_src = handle_noise_if_needed(img_src)
-
     result_params = []
 
     candidate_contours = compute_candidate_contours(img_src)
