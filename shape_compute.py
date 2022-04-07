@@ -16,7 +16,7 @@ class HoughSettings:
     def __init__(self):
         self.rho = 0.5
         self.theta = np.pi / 360
-        self.threshold = 20
+        self.threshold = 17
         self.min_line_length = 9
         self.max_line_gap = 3
 
