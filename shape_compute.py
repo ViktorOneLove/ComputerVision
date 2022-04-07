@@ -3,14 +3,22 @@ import numpy as np
 
 from intersection_model import IntersectionModel
 
+# class HoughSettings:
+#     def __init__(self):
+#         self.rho = 0.5
+#         self.theta = np.pi / 360
+#         self.threshold = 20
+#         self.min_line_length = 9
+#         self.max_line_gap = 3
+
 
 class HoughSettings:
     def __init__(self):
         self.rho = 0.5
         self.theta = np.pi / 360
-        self.threshold = 10
-        self.min_line_length = 5
-        self.max_line_gap = 2
+        self.threshold = 20
+        self.min_line_length = 9
+        self.max_line_gap = 3
 
 
 HOUGH_SETTINGS = HoughSettings()
